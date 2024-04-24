@@ -8,7 +8,9 @@ export default function Vans() {
         fetch("/api/vans")
             .then(res => res.json())
             .then(data => setVans(data.vans))
-    }, [])
+    }, [])  
+
+    console.log(vans)
 
     const vanElements = vans.map(van => (
         <div key={van.id} className="van-title">

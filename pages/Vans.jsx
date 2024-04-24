@@ -10,7 +10,7 @@ export default function Vans() {
             .then(data => setVans(data.vans))
     }, [])
 
-    const vansElements = vans.map(van => (
+    const vanElements = vans.map(van => (
         <div key={van.id} className="van-title">
             <img src={van.imageUrl} />
             <div className="van-info">
@@ -23,7 +23,7 @@ export default function Vans() {
 
     return (
         <>
-        {vansElements}
+        {vanElements}
         </>
     )
 }

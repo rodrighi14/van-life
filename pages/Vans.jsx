@@ -11,8 +11,6 @@ export default function Vans() {
             .then(data => setVans(data.vans))
     }, []) 
 
-    console.log(vans)
-
     const vanElements = vans.map(van => (
         <div key={van.id} className="van-tile">
             <Link to={`/vans/${van.id}`}>

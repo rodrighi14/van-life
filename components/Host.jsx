@@ -1,5 +1,5 @@
 import React from "react";
-import {Link, outlet} from 'react-router-dom';
+import {Link, Outlet} from 'react-router-dom';
 
 export default function Host(){
      return (
@@ -9,7 +9,7 @@ export default function Host(){
             <Link to="/host/income">Income</Link>
             <Link to="/host/reviews">Reviews</Link>
         </nav>
-        <outlet/>
+        <Outlet/>
         </>
      )
 }

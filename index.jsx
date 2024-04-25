@@ -6,6 +6,7 @@ import About from "./pages/About"
 import Vans from './pages/Vans';
 import VanDetail from './pages/VanDetail';
 import Layout from './components/Layout';
+import Host from './pages/Host';
 
 import './server'
 
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route element={ <Layout /> }>
           <Route path="/" element={ <Home /> } />
+          <Route path="/host" element={ <Host /> } />
           <Route path="/about" element={ <About /> } />
           <Route path="/vans" element={ <Vans />}/>
           <Route path="/vans/:id" element={ <VanDetail /> }/>

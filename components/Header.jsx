@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 export default function Header() {
   const style = {
     fontWeight: "bold",
-    textDecoration: "underline"
+    textDecoration: "underline",
     color: "#161616"
   }
 

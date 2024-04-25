@@ -26,7 +26,6 @@ function App() {
           <Route path="/vans/:id" element={ <VanDetail /> }/>
 
           <Route path="/host" element={<Host />}>
-            <Route path="/host/dashboard" element={<Dashboard />} />
             <Route path="/host/income" element={<Income />} />
             <Route path="/host/reviews" element={<Reviews />} />
           </Route>

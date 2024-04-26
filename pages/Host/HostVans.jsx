@@ -1,8 +1,8 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function HostVans() {
-    const [vans, setVans] = useEffect([]);
+    const [vans, setVans] = useState([]);
 
     useEffect(() => {
         fetch(api/host/vans)

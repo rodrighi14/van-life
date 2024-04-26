@@ -1,7 +1,24 @@
 import React from "react";
+import { useEffect } from "react";
 
 export default function HostVans() {
+    const [vans, setVans] = useEffect([]);
+
+    useEffect(() => {
+        fetch(api/host/vans)
+            .then(res => res.json)
+            .then(data => setVans(data))
+    }, [])
+
+    const VanElements = vans.map((van) => {
+        <div key={van.id}>
+            <img src={van.imageUrl} aria-label={`View details for ${van.name}, priced at $${van.price} per day`}/>
+            <h3>{van.name}</h3>
+            <p>{van.price}</p>
+        </div>
+    })
+
     return (
-        <h1>HostVans</h1>
+        <h1>Your listed vans</h1>
     )
 }

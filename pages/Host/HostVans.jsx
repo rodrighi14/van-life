@@ -7,7 +7,7 @@ export default function HostVans() {
     useEffect(() => {
         fetch(api/host/vans)
             .then(res => res.json)
-            .then(data => setVans(data))
+            .then(data => setVans(data.vans))
     }, [])
 
     const VanElements = vans.map((van) => {

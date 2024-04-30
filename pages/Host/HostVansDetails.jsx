@@ -5,6 +5,11 @@ import { Link, useParams, Outlet, NavLink } from 'react-router-dom';
 export default function HostVansDetails() {
     const {id} = useParams()
     const [currentVan, setCurrentVan] = useState(null)
+    const style = {
+        fontWeight: "bold",
+        textDecoration: "underline",
+        color: "#161616"
+      }
 
     useEffect(() => {
         fetch(`/api/host/vans/${id}`)

@@ -7,7 +7,7 @@ export default function HostVanPricing() {
 
     return (
         <section>
-            <h4>{`$ ${currentVan.price}/day`}</h4>
+            <h3 className="host-van-price">${currentVan.price}<span>/day</span></h3>
         </section>
      )
 }

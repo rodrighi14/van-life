@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Link, useParams, Outlet } from 'react-router-dom';
+import { Link, useParams, Outlet, NavLink } from 'react-router-dom';
 
 export default function HostVansDetails() {
     const {id} = useParams()

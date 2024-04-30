@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import {Link} from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+import { Link, useParams, Outlet } from 'react-router-dom';
 
 export default function HostVansDetails() {
     const {id} = useParams()
@@ -39,6 +38,7 @@ export default function HostVansDetails() {
                     </div>
                 </div>
             </div>
+            <Outlet />
         </section>
     )
 }
